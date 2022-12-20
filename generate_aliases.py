@@ -57,6 +57,18 @@ def main():
         ('sec', 'secret', ['g', 'd', 'rm'], None),
         ('no', 'nodes', ['g', 'd'], ['sys']),
         ('ns', 'namespaces', ['g', 'd', 'rm'], ['sys']),
+        # Hazelcast operator custom resources
+        ('hz', 'hazelcast', ['g', 'd', 'rm'], None),
+        ('mc', 'managementcenter', ['g', 'd', 'rm'], None),
+        ('hb', 'hotbackup', ['g', 'd', 'rm'], None),
+        ('chb', 'cronhotbackup', ['g', 'd', 'rm'], None),
+        ('map', 'map', ['g', 'd', 'rm'], None),
+        ('mmap', 'multimap', ['g', 'd', 'rm'], None),
+        ('rmap', 'replicatedmap', ['g', 'd', 'rm'], None),
+        ('wr', 'wanreplication', ['g', 'd', 'rm'], None),
+        ('tp', 'topic', ['g', 'd', 'rm'], None),
+        ('que', 'queue', ['g', 'd', 'rm'], None),
+        ('ca', 'cache', ['g', 'd', 'rm'], None),
         ]
     res_types = [r[0] for r in res]
 
